@@ -1,0 +1,15 @@
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\Domain.deps.json
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\Domain.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\ref\Domain.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\Domain.pdb
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\Entities.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\bin\Debug\net5.0\Entities.pdb
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.csproj.CopyComplete
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\ref\Domain.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Domain\obj\Debug\net5.0\Domain.pdb

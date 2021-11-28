@@ -1,0 +1,12 @@
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\bin\Debug\net5.0\Entities.deps.json
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\bin\Debug\net5.0\Entities.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\bin\Debug\net5.0\ref\Entities.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\bin\Debug\net5.0\Entities.pdb
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\ref\Entities.dll
+F:\VIA\Third Semester\C#\ThierdAssignment\FamilyRegistration\Entities\obj\Debug\net5.0\Entities.pdb

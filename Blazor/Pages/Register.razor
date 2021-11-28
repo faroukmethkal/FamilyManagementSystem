@@ -1,0 +1,79 @@
+﻿@page "/Register"
+@using Microsoft.AspNetCore.Components
+@using Entitiy
+@using Blazor.Authentication
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavgMan
+
+<div class="form">
+    <div class="form-header">
+        <h2>
+            Login
+        </h2>
+    </div>
+    <div>
+        <span class="error-message">@errorMessage</span>
+    </div>
+    <div class="form__group">
+        <input type="text" class="form__input" placeholder="Username" @bind="@newUser.FirstName">
+        <label for="name" class="form__label">First name</label>
+    </div>
+
+    <div class="form__group">
+        <input type="text" class="form__input" placeholder="Username" @bind="@newUser.LastNAme">
+        <label for="name" class="form__label">Last name</label>
+    </div>
+
+
+    <div class="form__group">
+        <input type="text" class="form__input" placeholder="Username" @bind="@newUser.Username">
+        <label for="name" class="form__label">Username</label>
+    </div>
+
+    <div class="form__group">
+        <input type="password" class="form__input" placeholder="Password" @bind="@newUser.Password">
+        <label class="form__label">Password</label>
+    </div>
+    <div class="form__group">
+
+        <div>
+            <select name="role" class="form__input_select" rows="1" @bind="newUser.Role">
+                <option value="@Role.Admin">Admin</option>
+                <option value="@Role.SocialHelper">Social Helper</option>
+            </select>
+        </div>
+        <div class="icon">
+            <label class="form__label"><span class="oi oi-pencil"/> Role</label>
+        </div>
+
+    </div>
+
+    <div class="form__group">
+        <button class="button-white" type="submit" @onclick="PerformRegisteration">Register</button>
+        <a class="button-white" href="Login">Login</a>
+    </div>
+    <div class="form__group">
+
+    </div>
+</div>
+
+@code {
+
+    User newUser = new User();
+    private string errorMessage;
+
+    public async Task PerformRegisteration()
+    {
+        try
+        {
+            await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateRegistration(newUser);
+            NavgMan.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            errorMessage = e.Message;
+        }
+    }
+
+}

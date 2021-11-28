@@ -1,0 +1,65 @@
+﻿@using Blazor.Authentication
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+<div class="main">
+
+    <header class="header">
+        <a href="/">
+            <img class="logo" alt="project management system" src="images/logo.png"/>
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <AuthorizeView Policy="MustBeAdmin">
+
+                </AuthorizeView>
+                <li>
+                    <a class="main-nav-link" href="Family">Familyes</a>
+                </li>
+                @*<li>
+                    <a class="main-nav-link" href="Family">Adults</a>
+                </li>
+                <li>
+                    <a class="main-nav-link" href="Family">Children</a>
+                </li>
+                <li>
+                    <a class="main-nav-link" href="Family">Family Pets</a>
+                </li>*@
+
+                <AuthorizeView>
+
+                    <Authorized>
+                        <li>
+                            <a herf="#" class="main-nav-link nav-cta" @onclick="PerformLogout">Logout</a>
+                        </li>
+                    </Authorized>
+
+                    <NotAuthorized>
+                        <li>
+                            <a href="Login" class="main-nav-link nav-cta">Login</a>
+                        </li>
+                    </NotAuthorized>
+                </AuthorizeView>
+
+            </ul>
+        </nav>
+
+    </header>
+
+</div>
+
+
+@code
+{
+    public async Task PerformLogout()
+    {
+        try
+        {
+            ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+        }
+    }
+}

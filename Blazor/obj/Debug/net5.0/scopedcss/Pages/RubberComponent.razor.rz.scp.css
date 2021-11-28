@@ -1,0 +1,17 @@
+.rubberComponent[b-jox206xc34]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+
+.activeChild[b-jox206xc34]{
+    flex-grow: 1;
+    padding-top: .5rem}
+.expandedClass[b-jox206xc34]{
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
