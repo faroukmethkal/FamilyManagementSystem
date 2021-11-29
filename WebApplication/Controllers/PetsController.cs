@@ -46,7 +46,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdatePet([FromQuery] [FromBody] Pet pet)
+        public async Task<ActionResult> UpdatePet([FromBody] Pet pet)
         {
             try
             {

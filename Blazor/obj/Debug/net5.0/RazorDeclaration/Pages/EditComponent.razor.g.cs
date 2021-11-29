@@ -120,7 +120,7 @@ using Entitiy;
     
   
     
-    private Adult adultToEdit;
+    private Adult adultToEdit = new Adult();
 
     private string errorMessage { get; set; }
 

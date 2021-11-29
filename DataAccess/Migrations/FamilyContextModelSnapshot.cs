@@ -202,8 +202,9 @@ namespace DataAccess.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("SecurityLevel")
                         .HasColumnType("INTEGER");

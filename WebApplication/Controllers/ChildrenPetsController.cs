@@ -20,7 +20,7 @@ namespace WebApplication.Controllers
         
 
         [HttpPost]
-        public async Task<ActionResult> PostChildPet([FromQuery]  int childId, [FromBody] Pet pet)
+        public async Task<ActionResult> PostChildPet([FromQuery] int childId, [FromBody] Pet pet)
         {
             try
             {

@@ -38,8 +38,8 @@
 
         <div>
             <select name="role" class="form__input_select" rows="1" @bind="newUser.Role">
-                <option value="@Role.Admin">Admin</option>
-                <option value="@Role.SocialHelper">Social Helper</option>
+                <option value="@Role.Admin.ToString()">@Role.Admin</option>
+                <option value="@Role.SocialHelper.ToString()">@Role.SocialHelper</option>
             </select>
         </div>
         <div class="icon">

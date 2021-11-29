@@ -50,7 +50,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> PutChild([FromQuery] [FromBody] Child child)
+        public async Task<ActionResult> PutChild([FromBody] Child child)
         {
             try
             {

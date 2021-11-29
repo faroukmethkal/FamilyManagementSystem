@@ -182,7 +182,7 @@ namespace Blazor.Data
 
         public async Task<Child> GetChild(int id)
         {
-            HttpResponseMessage responseMessage = await client.GetAsync($"child?id={id}");
+            HttpResponseMessage responseMessage = await client.GetAsync($"children?id={id}");
             if (!responseMessage.IsSuccessStatusCode)
             {
                 throw new Exception("Error, no response");

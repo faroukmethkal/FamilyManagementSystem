@@ -18,8 +18,9 @@ namespace DataAccess.Persistence
         {
             modelBuilder.Entity<Family>()
                 .HasKey(fam => new {fam.StreetName, fam.HouseNumber});
-           
-            
+            modelBuilder.Entity<User>()
+                .Property(u => u.Role).HasConversion<string>();
+
         }
     }
 }

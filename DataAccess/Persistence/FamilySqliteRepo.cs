@@ -112,9 +112,9 @@ namespace DataAccess.Persistence
 
         public async Task UpdateAdult(Adult adult)
         {
-            Adult fAdult = await fctx.Families.SelectMany(f => f.Adults).FirstAsync(a => a.Id == adult.Id);
-            
-            if (fAdult != null)
+           Adult fAdult = await fctx.Families.SelectMany(f => f.Adults).FirstAsync(a => a.Id == adult.Id);
+
+           if (fAdult != null)
             {
                 fAdult.FirstName = adult.FirstName;
                 fAdult.LastName = adult.LastName;
@@ -146,29 +146,20 @@ namespace DataAccess.Persistence
                 fChild.Weight = child.Weight;
                 fChild.Height = child.Height;
                 fChild.Sex = child.Sex;
-                
                 await fctx.SaveChangesAsync();
             }
         }
 
         public async Task UpdatePet(Pet pet)
         {
-
-            /*Pet fPet = await fctx.Families.SelectMany(f => f.Children).SelectMany(c => c.Pets)
-                .FirstAsync(p => p.Id == pet.Id);
             
-            if (fPet == null)
-            {
-                fPet = await fctx.Families.SelectMany(f => f.Pets).FirstAsync(p => p.Id == pet.Id);
-            }*/
            Pet fPet = await fctx.Families.SelectMany(f => f.Pets).FirstAsync(p => p.Id == pet.Id);
-            
+           
             if (fPet != null)
             {
                 fPet.Species = pet.Species;
                 fPet.Name = pet.Name;
                 fPet.Age = pet.Age;
-                
                 await fctx.SaveChangesAsync();
             }
         }
@@ -186,7 +177,7 @@ namespace DataAccess.Persistence
 
         public async Task<Adult> GetAdult(int id)
         {
-            Adult adult =   await fctx.Families.SelectMany(f=> f.Adults).FirstAsync(a=> a.Id== id);
+            Adult adult =  await fctx.Families.SelectMany(f=> f.Adults).FirstAsync(a=> a.Id== id);
 
             return adult;
         }
@@ -194,7 +185,6 @@ namespace DataAccess.Persistence
         public async Task<Child> GetChild( int id)
         {
             Child child =   await fctx.Families.SelectMany(f=> f.Children).FirstAsync(c=> c.Id== id);
-
             return child;
         }
 

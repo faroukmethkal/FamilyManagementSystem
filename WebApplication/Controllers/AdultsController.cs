@@ -69,7 +69,7 @@ namespace WebApplication.Controllers
 
         [Route("api/adults")]
         [HttpPut]
-        public async Task<ActionResult> UpdateAdult([FromQuery] [FromBody] Adult adult)
+        public async Task<ActionResult> UpdateAdult([FromBody] Adult adult)
         {
             try
             {

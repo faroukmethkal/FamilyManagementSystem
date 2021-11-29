@@ -47,7 +47,7 @@ namespace Blazor
                 });
                 options.AddPolicy("MustBeSocialHelper", a =>
                 {
-                    a.RequireAuthenticatedUser().RequireClaim("Role", "Social Helper");
+                    a.RequireAuthenticatedUser().RequireClaim("Role", "SocialHelper");
                 });
             });
         }
